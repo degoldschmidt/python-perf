@@ -1,6 +1,6 @@
 from time import time
 
-def timer(func):
+def timed(func):
     """
     Function decorator used to measure running time.
     """
