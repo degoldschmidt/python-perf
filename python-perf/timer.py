@@ -9,7 +9,7 @@ def timed(func):
         output = func(*args, **kwargs)
         end = time()
         
-        print(f"{func.__name__} took {end-start} sec to run.")
+        print(f"{func.__name__} took {end-start:.3f} sec to run.")
         
         return output
     return wrapper

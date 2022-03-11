@@ -1,4 +1,4 @@
-from tests import append_numbers, gen_random_numbers, square_numbers
+from tests import append_numbers, gen_random_numbers, process_video, square_numbers
 import argparse
 import numpy as np
 import scipy as sp
@@ -18,8 +18,14 @@ if __name__ == '__main__':
     print(f'Test square_numbers with {N}.')
     square_numbers(N)
 
-    np.core.test()
+    #np.core.test()
 
-    sp.test()
+    #sp.test()
 
+    Nframes = 1800 ## == 1 minute
+    print(f'Test process_video with {Nframes} frames.')
+    process_video(Nframes)
+
+    print(f'Test process_video and display with {Nframes} frames.')
+    process_video(Nframes, display=True)
 
